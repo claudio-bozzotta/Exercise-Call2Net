@@ -9,12 +9,12 @@ const algoritmo = (array) => {
         result = result * array[i];
     }
     if(result%2==0){
-      console.log("Sì, pari!" + result);
+      console.log("Yes, it's even!" + result);
       for (let i=0; i < array.length; i++) {
         sum = sum + array[i];
       }
     } else {
-      sum = "non pervenuta perché il prodotto è dispari"
+      sum = "Sum was not made because the result of the multiplication is odd"
     }
     
     return sum;
@@ -27,7 +27,7 @@ const algoritmo = (array) => {
 function App() {
   return (
     <div className="App">
-      Vediamo
+      Create an algorythm that verifies if the result of a list of number multiplied is even or odd, and, if even, print the sum of all the elements of the list
       <h1>
         {algoritmo([1,2,1,2,8])}
       </h1>
